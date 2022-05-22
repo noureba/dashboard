@@ -20,7 +20,7 @@ function App() {
   return (
     <Layout>
         <Routes>
-          <Route exact path="/" element={<Home/>} />
+          <Route exact path="/dashboard" element={<Home/>} />
           <Route path="/analytics" element={<Analytics/>} />
           <Route path="/sales" element={<Sales/>} />
           <Route path="/users" element={<Users/>} />
