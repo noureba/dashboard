@@ -1,0 +1,78 @@
+.analytics {
+  background-color: aliceblue;
+  height: 100%;
+}
+.analytics .cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: #202020;
+}
+.analytics .cards .card {
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  color: #202020;
+}
+.analytics .cards .card:hover {
+  background-color: #e4e4e4;
+}
+.analytics .cards .card div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.analytics .line {
+  background-color: white;
+  padding: 10px;
+  width: 90%;
+  margin: 50px auto;
+}
+.analytics .chart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.analytics .chart div:first-child {
+  width: 40%;
+  margin: 10px;
+  background-color: white;
+  padding: 10px;
+}
+.analytics .chart div:last-child {
+  width: 90%;
+  margin: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+@media (max-width: 900px) {
+  .analytics .cards .card {
+    width: 350px;
+    margin: 10px;
+  }
+  .analytics .chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .analytics .chart div:first-child {
+    width: 90%;
+    margin: 10px;
+    background-color: white;
+    padding: 10px;
+  }
+  .analytics .chart div:last-child {
+    width: 90%;
+    margin: 10px;
+    background-color: white;
+    padding: 10px;
+  }
+}
+
+/*# sourceMappingURL=Home.css.map */

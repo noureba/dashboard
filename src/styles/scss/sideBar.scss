@@ -1,0 +1,48 @@
+@import "./vars";
+
+
+.brand{
+    padding: 20px 0px;
+    text-align: center;
+    word-wrap: break-word;
+    .logoD{
+        font-size: 36px;
+    }
+    .logoM{
+        font-size: 16px;
+    }
+    i{
+        display: none;
+    }
+}
+.sidebar{
+    height: 100vh;
+    position: fixed;
+    z-index: 99999;
+}
+
+$sidebar-bg-color: $primary_color;
+$submenu-bg-color: #012c64;
+$sidebar-color:#fff;
+$icon-bg-color: #DC3545;
+
+
+@import '../../../node_modules/react-pro-sidebar/dist/scss/styles.scss';
+
+@media(max-width: 900px){
+    .brand{
+
+        position: relative;
+        i{
+            display: block;
+            font-size: 30px;
+            position: absolute;
+            right: 10px;
+            top: 23px;
+            color: #DC3545;
+        }
+        .hide{
+            display: none;
+        }
+    }
+}
